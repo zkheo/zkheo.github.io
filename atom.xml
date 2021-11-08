@@ -32,6 +32,7 @@
 &lt;p&gt;将 Mysql 驱动 &lt;span class=&#34;label info&#34;&gt;mysql-connector-java-8.0.26.jar&lt;/span&gt; 拷贝到容器&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWxpeXVuZHJpdmUuY29tL3MvUHNxU2FWVHJBNGs=&#34;&gt;前往下载&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;将mysql驱动拷贝到容器&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#将mysql驱动拷贝到容器&#34;&gt;#&lt;/a&gt; 将 MySQL 驱动拷贝到容器&lt;/h4&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker &lt;span class=&#34;token function&#34;&gt;cp&lt;/span&gt; mysql-connector-java-8.0.26.jar jira:/opt/atlassian/jira/lib&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;配置完成后重启容器&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker restart jira&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;刷新页面，再次尝试连接即可成功&lt;/p&gt;
 &lt;h2 id=&#34;授权破解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#授权破解&#34;&gt;#&lt;/a&gt; 授权破解&lt;/h2&gt;
