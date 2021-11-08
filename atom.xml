@@ -43,6 +43,7 @@
 </content>
         <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
         <category term="jira" scheme="http://zkheo.top/tags/jira/" />
+        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
         <updated>2021-11-08T06:02:44.000Z</updated>
     </entry>
     <entry>
@@ -93,6 +94,7 @@
         <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
         <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
         <category term="shoka" scheme="http://zkheo.top/tags/shoka/" />
+        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
         <updated>2021-11-05T06:01:27.000Z</updated>
     </entry>
     <entry>
