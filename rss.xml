@@ -396,8 +396,8 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
             <title>Gitlab Docker 部署</title>
             <link>http://zkheo.top/2021/11/08/buildGitlab/</link>
             <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-            <category term="gitlab" scheme="http://zkheo.top/tags/gitlab/" />
             <category term="docker" scheme="http://zkheo.top/tags/docker/" />
+            <category term="gitlab" scheme="http://zkheo.top/tags/gitlab/" />
             <pubDate>Mon, 08 Nov 2021 18:05:52 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;拉取官方镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拉取官方镜像&#34;&gt;#&lt;/a&gt; 拉取官方镜像&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker pull gitlab/gitlab-ce&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;创建宿主机挂在卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建宿主机挂在卷&#34;&gt;#&lt;/a&gt; 创建宿主机挂在卷&lt;/h1&gt;
@@ -470,9 +470,9 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
             <title>Hexo Blog 搭建</title>
             <link>http://zkheo.top/2021/11/05/buildHexoByShokaBlog/</link>
             <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-            <category term="docker" scheme="http://zkheo.top/tags/docker/" />
             <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
             <category term="shoka" scheme="http://zkheo.top/tags/shoka/" />
+            <category term="docker" scheme="http://zkheo.top/tags/docker/" />
             <pubDate>Fri, 05 Nov 2021 14:01:27 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;基于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vemgtY24=&#34;&gt; Hexo&lt;/span&gt; 框架，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Nob2thLmxvc3R5dS5tZQ==&#34;&gt;Shoka&lt;/span&gt; 主题，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dpdGh1Yi5jb20=&#34;&gt;GitHub&lt;/span&gt; 托管&lt;/p&gt;

@@ -413,8 +413,8 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/blockquote&gt;
 </content>
         <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="gitlab" scheme="http://zkheo.top/tags/gitlab/" />
         <category term="docker" scheme="http://zkheo.top/tags/docker/" />
+        <category term="gitlab" scheme="http://zkheo.top/tags/gitlab/" />
         <updated>2021-11-08T10:05:52.000Z</updated>
     </entry>
     <entry>
@@ -508,9 +508,9 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/ul&gt;
 </content>
         <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
         <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
         <category term="shoka" scheme="http://zkheo.top/tags/shoka/" />
+        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
         <updated>2021-11-05T06:01:27.000Z</updated>
     </entry>
 </feed>
