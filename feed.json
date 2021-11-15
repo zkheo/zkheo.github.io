@@ -9,7 +9,7 @@
         {
             "id": "http://zkheo.top/2021/11/15/tunnel/",
             "url": "http://zkheo.top/2021/11/15/tunnel/",
-            "title": "tunnel",
+            "title": "内网穿透",
             "date_published": "2021-11-15T07:28:07.000Z",
             "content_html": "<h3 id=\"githun\"><a class=\"anchor\" href=\"#githun\">#</a> <span class=\"exturl\" data-url=\"aHR0cHM6Ly9odWIuZmFzdGdpdC5vcmcvd3VjYW8vbmF0eA==\">Githun</span></h3>\n<h3 id=\"服务端启动命令\"><a class=\"anchor\" href=\"#服务端启动命令\">#</a> 服务端启动命令:</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>java -jar natx-server.jar -port <span class=\"token number\">9000</span> -password password123</pre></td></tr></table></figure><h3 id=\"客户端启动命令\"><a class=\"anchor\" href=\"#客户端启动命令\">#</a> 客户端启动命令：</h3>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>java -jar natx-client.jar -server_addr <span class=\"token number\">211.161</span>.xxx.xxx -server_port <span class=\"token number\">7731</span> -password password123 -proxy_addr localhost -proxy_port <span class=\"token number\">8080</span> -remote_port <span class=\"token number\">10000</span></pre></td></tr></table></figure><h3 id=\"参数说明\"><a class=\"anchor\" href=\"#参数说明\">#</a> 参数说明：</h3>\n<ul>\n<li><code>server_addr</code>  Natx 服务端的网络地址，即 Natx 服务端运行的服务器外网 IP 或 hostname</li>\n<li><code>server_port</code>  Natx 服务端的端口</li>\n<li><code>password</code>  Natx 服务端的 password</li>\n<li><code>proxy_addr</code>  被代理的应用网络地址</li>\n<li><code>proxy_port</code>  被代理的应用端口号</li>\n<li><code>remote_port</code>  Natx 服务端对外访问该应用的端口</li>\n</ul>\n",
             "tags": [
