@@ -10,8 +10,29 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Tue, 09 Nov 2021 14:29:30 +0800</pubDate>
-        <lastBuildDate>Tue, 09 Nov 2021 14:29:30 +0800</lastBuildDate>
+        <pubDate>Mon, 15 Nov 2021 15:28:07 +0800</pubDate>
+        <lastBuildDate>Mon, 15 Nov 2021 15:28:07 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://zkheo.top/2021/11/15/tunnel/</guid>
+            <title>tunnel</title>
+            <link>http://zkheo.top/2021/11/15/tunnel/</link>
+            <category term="网络" scheme="http://zkheo.top/categories/%E7%BD%91%E7%BB%9C/" />
+            <category term="内网穿透" scheme="http://zkheo.top/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" />
+            <pubDate>Mon, 15 Nov 2021 15:28:07 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;githun&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#githun&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZmFzdGdpdC5vcmcvd3VjYW8vbmF0eA==&#34;&gt;Githun&lt;/span&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;服务端启动命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务端启动命令&#34;&gt;#&lt;/a&gt; 服务端启动命令:&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;java -jar natx-server.jar -port &lt;span class=&#34;token number&#34;&gt;9000&lt;/span&gt; -password password123&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;客户端启动命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#客户端启动命令&#34;&gt;#&lt;/a&gt; 客户端启动命令：&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;java -jar natx-client.jar -server_addr &lt;span class=&#34;token number&#34;&gt;211.161&lt;/span&gt;.xxx.xxx -server_port &lt;span class=&#34;token number&#34;&gt;7731&lt;/span&gt; -password password123 -proxy_addr localhost -proxy_port &lt;span class=&#34;token number&#34;&gt;8080&lt;/span&gt; -remote_port &lt;span class=&#34;token number&#34;&gt;10000&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;参数说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参数说明&#34;&gt;#&lt;/a&gt; 参数说明：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;server_addr&lt;/code&gt;  Natx 服务端的网络地址，即 Natx 服务端运行的服务器外网 IP 或 hostname&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;server_port&lt;/code&gt;  Natx 服务端的端口&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;password&lt;/code&gt;  Natx 服务端的 password&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;proxy_addr&lt;/code&gt;  被代理的应用网络地址&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;proxy_port&lt;/code&gt;  被代理的应用端口号&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;remote_port&lt;/code&gt;  Natx 服务端对外访问该应用的端口&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://zkheo.top/2021/11/09/shokaSpecialGrammar/</guid>
             <title>Shoka 特殊语法</title>
