@@ -1,29 +1,29 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://zkheo.top</id>
+    <id>https://www.zkheo.top</id>
     <title></title>
     <subtitle></subtitle>
-    <icon>http://zkheo.top/images/favicon.ico</icon>
-    <link href="http://zkheo.top" />
+    <icon>https://www.zkheo.top/images/favicon.ico</icon>
+    <link href="https://www.zkheo.top" />
     <author>
       <name>ZKHeo</name>
     </author>
     <updated>2021-11-26T02:54:52.000Z</updated>
     <entry>
-        <id>http://zkheo.top/2021/11/26/mysqlLock/</id>
+        <id>https://www.zkheo.top/2021/11/26/mysqlLock/</id>
         <title>Mysql 锁</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/26/mysqlLock/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/26/mysqlLock/"/>
         <content type="html">&lt;h1 id=&#34;mysql-锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-锁&#34;&gt;#&lt;/a&gt; Mysql 锁&lt;/h1&gt;
 </content>
-        <category term="mysql" scheme="http://zkheo.top/categories/mysql/" />
-        <category term="mysql" scheme="http://zkheo.top/tags/mysql/" />
-        <category term="面试" scheme="http://zkheo.top/tags/%E9%9D%A2%E8%AF%95/" />
+        <category term="mysql" scheme="https://www.zkheo.top/categories/mysql/" />
+        <category term="mysql" scheme="https://www.zkheo.top/tags/mysql/" />
+        <category term="面试" scheme="https://www.zkheo.top/tags/%E9%9D%A2%E8%AF%95/" />
         <updated>2021-11-26T02:54:52.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/15/tunnel/</id>
+        <id>https://www.zkheo.top/2021/11/15/tunnel/</id>
         <title>内网穿透</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/15/tunnel/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/15/tunnel/"/>
         <content type="html">&lt;h3 id=&#34;githun&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#githun&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZmFzdGdpdC5vcmcvd3VjYW8vbmF0eA==&#34;&gt;Githun&lt;/span&gt;&lt;/h3&gt;
 &lt;h3 id=&#34;服务端启动命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#服务端启动命令&#34;&gt;#&lt;/a&gt; 服务端启动命令:&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;java -jar natx-server.jar -port &lt;span class=&#34;token number&#34;&gt;9000&lt;/span&gt; -password password123&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;客户端启动命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#客户端启动命令&#34;&gt;#&lt;/a&gt; 客户端启动命令：&lt;/h3&gt;
@@ -37,14 +37,14 @@
 &lt;li&gt;&lt;code&gt;remote_port&lt;/code&gt;  Natx 服务端对外访问该应用的端口&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="网络" scheme="http://zkheo.top/categories/%E7%BD%91%E7%BB%9C/" />
-        <category term="内网穿透" scheme="http://zkheo.top/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" />
+        <category term="网络" scheme="https://www.zkheo.top/categories/%E7%BD%91%E7%BB%9C/" />
+        <category term="内网穿透" scheme="https://www.zkheo.top/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" />
         <updated>2021-11-15T07:28:07.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/09/shokaSpecialGrammar/</id>
+        <id>https://www.zkheo.top/2021/11/09/shokaSpecialGrammar/</id>
         <title>Shoka 特殊语法</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/09/shokaSpecialGrammar/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/09/shokaSpecialGrammar/"/>
         <content type="html">&lt;h1 id=&#34;links链接块&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#links链接块&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;kbd red&#34;&gt;links&lt;/span&gt; 链接块&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;使用 &lt;span class=&#34;kbd red&#34;&gt;links&lt;/span&gt; 标签块，包围 &lt;span class=&#34;kbd red&#34;&gt;yml&lt;/span&gt; 语法书写的内容，字段包括&lt;/li&gt;
@@ -242,15 +242,15 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;p&gt;更全面的特殊功能&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==&#34;&gt;请戳&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="hexo" scheme="http://zkheo.top/categories/hexo/" />
-        <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
-        <category term="shoka" scheme="http://zkheo.top/tags/shoka/" />
+        <category term="hexo" scheme="https://www.zkheo.top/categories/hexo/" />
+        <category term="hexo" scheme="https://www.zkheo.top/tags/hexo/" />
+        <category term="shoka" scheme="https://www.zkheo.top/tags/shoka/" />
         <updated>2021-11-09T06:29:30.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/09/buildYapiByDocker/</id>
+        <id>https://www.zkheo.top/2021/11/09/buildYapiByDocker/</id>
         <title>Yapi Docker 部署</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/09/buildYapiByDocker/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/09/buildYapiByDocker/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Yapi 数据库依赖 MongoDB&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -276,15 +276,15 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;p&gt;初始密码：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3lhcGkucHJv&#34;&gt;yapi.pro&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
-        <category term="yapi" scheme="http://zkheo.top/tags/yapi/" />
+        <category term="部署搭建" scheme="https://www.zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
+        <category term="docker" scheme="https://www.zkheo.top/tags/docker/" />
+        <category term="yapi" scheme="https://www.zkheo.top/tags/yapi/" />
         <updated>2021-11-09T06:04:58.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/09/front-matter/</id>
+        <id>https://www.zkheo.top/2021/11/09/front-matter/</id>
         <title>Front-matter</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/09/front-matter/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/09/front-matter/"/>
         <content type="html">&lt;h1 id=&#34;page-front-matter&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#page-front-matter&#34;&gt;#&lt;/a&gt; Page Front-matter&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -416,14 +416,14 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content>
-        <category term="hexo" scheme="http://zkheo.top/categories/hexo/" />
-        <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
+        <category term="hexo" scheme="https://www.zkheo.top/categories/hexo/" />
+        <category term="hexo" scheme="https://www.zkheo.top/tags/hexo/" />
         <updated>2021-11-09T02:00:02.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/08/buildGitlab/</id>
+        <id>https://www.zkheo.top/2021/11/08/buildGitlab/</id>
         <title>Gitlab Docker 部署</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/08/buildGitlab/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/08/buildGitlab/"/>
         <content type="html">&lt;h1 id=&#34;拉取官方镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#拉取官方镜像&#34;&gt;#&lt;/a&gt; 拉取官方镜像&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;docker pull gitlab/gitlab-ce&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;创建宿主机挂在卷&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建宿主机挂在卷&#34;&gt;#&lt;/a&gt; 创建宿主机挂在卷&lt;/h1&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; gitlab/config &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; gitlab/logs&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mkdir&lt;/span&gt; gitlab/data&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;启动gitlab镜像&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#启动gitlab镜像&#34;&gt;#&lt;/a&gt; 启动 Gitlab 镜像&lt;/h1&gt;
@@ -444,15 +444,15 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;p&gt;访问：IP:PORT&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="gitlab" scheme="http://zkheo.top/tags/gitlab/" />
-        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
+        <category term="部署搭建" scheme="https://www.zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
+        <category term="gitlab" scheme="https://www.zkheo.top/tags/gitlab/" />
+        <category term="docker" scheme="https://www.zkheo.top/tags/docker/" />
         <updated>2021-11-08T10:05:52.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/08/buildJiraByDocker/</id>
+        <id>https://www.zkheo.top/2021/11/08/buildJiraByDocker/</id>
         <title>Jira 破解版 Docker 部署</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/08/buildJiraByDocker/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/08/buildJiraByDocker/"/>
         <content type="html">&lt;h1 id=&#34;初始化数据库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#初始化数据库&#34;&gt;#&lt;/a&gt; 初始化数据库&lt;/h1&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;DATABASE&lt;/span&gt; jiradb &lt;span class=&#34;token keyword&#34;&gt;CHARACTER&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;SET&lt;/span&gt; utf8mb4 &lt;span class=&#34;token keyword&#34;&gt;COLLATE&lt;/span&gt; utf8mb4_bin&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;jira&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;%&#39;&lt;/span&gt; IDENTIFIED &lt;span class=&#34;token keyword&#34;&gt;BY&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;jira&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;GRANT&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;INSERT&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;UPDATE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;DELETE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;CREATE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;DROP&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;REFERENCES&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;INDEX&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;on&lt;/span&gt; jiradb&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;TO&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;jira&#39;&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;@&#39;%&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; flush &lt;span class=&#34;token keyword&#34;&gt;privileges&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;下载破解文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载破解文件&#34;&gt;#&lt;/a&gt; 下载破解文件&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYWxpeXVuZHJpdmUuY29tL3MvaGE4amlUTFk3clk=&#34;&gt;前往下载&lt;/span&gt;&lt;/p&gt;
@@ -489,15 +489,15 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://gitee.com/zkphone/img-bed/raw/master/img/20211109111514.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
-        <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
-        <category term="jira" scheme="http://zkheo.top/tags/jira/" />
+        <category term="部署搭建" scheme="https://www.zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
+        <category term="docker" scheme="https://www.zkheo.top/tags/docker/" />
+        <category term="jira" scheme="https://www.zkheo.top/tags/jira/" />
         <updated>2021-11-08T06:02:44.000Z</updated>
     </entry>
     <entry>
-        <id>http://zkheo.top/2021/11/05/buildHexoByShokaBlog/</id>
+        <id>https://www.zkheo.top/2021/11/05/buildHexoByShokaBlog/</id>
         <title>Hexo Blog 搭建</title>
-        <link rel="alternate" href="http://zkheo.top/2021/11/05/buildHexoByShokaBlog/"/>
+        <link rel="alternate" href="https://www.zkheo.top/2021/11/05/buildHexoByShokaBlog/"/>
         <content type="html">&lt;blockquote&gt;
 &lt;p&gt;基于&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2hleG8uaW8vemgtY24=&#34;&gt; Hexo&lt;/span&gt; 框架，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3Nob2thLmxvc3R5dS5tZQ==&#34;&gt;Shoka&lt;/span&gt; 主题，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2dpdGh1Yi5jb20=&#34;&gt;GitHub&lt;/span&gt; 托管&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -539,10 +539,10 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="部署搭建" scheme="http://zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
-        <category term="docker" scheme="http://zkheo.top/tags/docker/" />
-        <category term="hexo" scheme="http://zkheo.top/tags/hexo/" />
-        <category term="shoka" scheme="http://zkheo.top/tags/shoka/" />
+        <category term="部署搭建" scheme="https://www.zkheo.top/categories/%E9%83%A8%E7%BD%B2%E6%90%AD%E5%BB%BA/" />
+        <category term="docker" scheme="https://www.zkheo.top/tags/docker/" />
+        <category term="hexo" scheme="https://www.zkheo.top/tags/hexo/" />
+        <category term="shoka" scheme="https://www.zkheo.top/tags/shoka/" />
         <updated>2021-11-05T06:01:27.000Z</updated>
     </entry>
 </feed>
