@@ -35,6 +35,43 @@
         <title>Mysql 锁</title>
         <link rel="alternate" href="https://www.zkheo.top/2021/11/26/mysqlLock/"/>
         <content type="html">&lt;h1 id=&#34;mysql-锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-锁&#34;&gt;#&lt;/a&gt; Mysql 锁&lt;/h1&gt;
+&lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;锁是多线程，在并发访问共享资源时的协调机制，保证数据并发访问的一致性，有效性。 锁冲突会影响数据库并发性能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;innodb 默认行级锁，行锁是通过给索引上的索引项加锁来实现的。只有通过索引检索数据，才能使用行锁，否则将使用表锁。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;锁的粒度&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锁的粒度&#34;&gt;#&lt;/a&gt; 锁的粒度&lt;/h2&gt;
+&lt;h3 id=&#34;表锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#表锁&#34;&gt;#&lt;/a&gt; 表锁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;开销小，加锁快，不会出现死锁；锁的粒度大，发生锁冲突的几率高，并发性能低&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;行锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#行锁&#34;&gt;#&lt;/a&gt; 行锁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;开销大，加锁慢，会出现死锁；锁的粒度小，发生锁冲突的几率低，并发性能相对较高&lt;/li&gt;
+&lt;li&gt;行锁是基于索引来实现的，只有通过索引字段作为检索条件时，使用行级锁，否则使用表锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;锁的类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#锁的类型&#34;&gt;#&lt;/a&gt; 锁的类型&lt;/h2&gt;
+&lt;h3 id=&#34;共享锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#共享锁&#34;&gt;#&lt;/a&gt; 共享锁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;也称为读锁，共享读，当一个事务对数据添加共享锁后，其他事务也可以对该数据添加共享锁，但不能添加排他锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;lock&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;share&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;mode&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;排它锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#排它锁&#34;&gt;#&lt;/a&gt; 排它锁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;也称为写锁，当一个事务对数据添加排他锁后，其他事务，不能对该数据添加任何锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;figcaption data-lang=&#34;SQL&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;token keyword&#34;&gt;update&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;意向锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#意向锁&#34;&gt;#&lt;/a&gt; 意向锁&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;（IS）意向共享锁，当一个事务对数据申请共享锁时，会先申请意向共享锁&lt;/li&gt;
+&lt;li&gt;（IX）意向排他锁，当一个事务对数据申请排他锁时，会先申请意向排他锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;意向锁的意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#意向锁的意义&#34;&gt;#&lt;/a&gt; 意向锁的意义&lt;/h4&gt;
+&lt;p&gt;假设，事务 A 获取了某一行的排它锁，尚未提交，此时事务 B 想要获取表锁时，必须要确认表的每一行都不存在排他锁，很明显效率会很低，引入意向锁之后，只需要判断表级意向锁即可，效率就会大为改善&lt;/p&gt;
+&lt;h3 id=&#34;间隙锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#间隙锁&#34;&gt;#&lt;/a&gt; 间隙锁&lt;/h3&gt;
+&lt;p&gt;当我们用范围条件检索数据而不是相等条件检索数据，并请求共享或排他锁时，InnoDB 会给符合范围条件的已有数据记录的&lt;strong&gt;索引项加锁&lt;/strong&gt;；对于键值在条件范围内但并不存在 的记录，叫做 “间隙（GAP)”。&lt;/p&gt;
+&lt;h4 id=&#34;间隙锁的意义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#间隙锁的意义&#34;&gt;#&lt;/a&gt; 间隙锁的意义&lt;/h4&gt;
+&lt;p&gt;防止出现幻读&lt;/p&gt;
 </content>
         <category term="mysql" scheme="https://www.zkheo.top/categories/mysql/" />
         <category term="mysql" scheme="https://www.zkheo.top/tags/mysql/" />
