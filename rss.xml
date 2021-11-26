@@ -10,8 +10,31 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Fri, 26 Nov 2021 12:51:52 +0800</pubDate>
-        <lastBuildDate>Fri, 26 Nov 2021 12:51:52 +0800</lastBuildDate>
+        <pubDate>Fri, 26 Nov 2021 18:50:27 +0800</pubDate>
+        <lastBuildDate>Fri, 26 Nov 2021 18:50:27 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://www.zkheo.top/2021/11/26/mysqlMvcc/</guid>
+            <title>Mysql Mvcc</title>
+            <link>https://www.zkheo.top/2021/11/26/mysqlMvcc/</link>
+            <category term="mysql" scheme="https://www.zkheo.top/categories/mysql/" />
+            <category term="mysql" scheme="https://www.zkheo.top/tags/mysql/" />
+            <category term="面试" scheme="https://www.zkheo.top/tags/%E9%9D%A2%E8%AF%95/" />
+            <pubDate>Fri, 26 Nov 2021 18:50:27 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql-mvcc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-mvcc&#34;&gt;#&lt;/a&gt; Mysql Mvcc&lt;/h1&gt;
+&lt;h2 id=&#34;概要&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概要&#34;&gt;#&lt;/a&gt; 概要&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;MVCC&lt;/code&gt; ，全称 &lt;code&gt;Multi-Version Concurrency Control&lt;/code&gt; ，即多版本并发控制。在发生读写冲突时，能做到不加锁，非阻塞并发读&lt;/p&gt;
+&lt;h2 id=&#34;当前读-快照读&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#当前读-快照读&#34;&gt;#&lt;/a&gt; 当前读、快照读&lt;/h2&gt;
+&lt;p&gt;在学习 MVCC 多版本并发控制之前，需要了解一下，什么是 MySQL InnoDB 下的 &lt;code&gt;当前读&lt;/code&gt; 和 &lt;code&gt;快照读&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;当前读&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#当前读&#34;&gt;#&lt;/a&gt; 当前读&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;select lock in share&lt;/code&gt;  (共享锁), &lt;code&gt;select for update; update; insert; delete&lt;/code&gt;  (排他锁)，这些操作都是当前读，读取时还要保证其他并发事务不能修改当前记录，会对读取的记录进行加锁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;快照读&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#快照读&#34;&gt;#&lt;/a&gt; 快照读&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;普通的 &lt;code&gt;select&lt;/code&gt;  操作就是快照读，不加锁的非阻塞读。快照读的前提是隔离级别不是串行级别，串行级别下的快照读会退化成当前读；之所以出现快照读的情况，是基于提高并发性能的考虑，&lt;ins class=&#34;dot&#34;&gt;快照读的实现是基于多版本并发控制&lt;/ins&gt;，即 MVCC, 可以认为 MVCC 是行锁的一个变种，但它在很多情况下，避免了加锁操作，降低了开销；既然是基于多版本，即快照读可能读到的并不一定是数据的最新版本，而有可能是之前的历史版本&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.zkheo.top/2021/11/26/hexoCommands/</guid>
             <title>Blog 常用命令备注</title>
