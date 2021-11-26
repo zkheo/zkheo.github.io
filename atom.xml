@@ -13,9 +13,9 @@
         <id>https://www.zkheo.top/2021/11/26/mysqlMvcc/</id>
         <title>Mysql Mvcc</title>
         <link rel="alternate" href="https://www.zkheo.top/2021/11/26/mysqlMvcc/"/>
-        <content type="html">&lt;h1 id=&#34;mysql-mvcc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-mvcc&#34;&gt;#&lt;/a&gt; Mysql Mvcc&lt;/h1&gt;
+        <content type="html">&lt;h1 id=&#34;mysql-mvcc&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-mvcc&#34;&gt;#&lt;/a&gt; Mysql MVCC&lt;/h1&gt;
 &lt;h2 id=&#34;概要&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概要&#34;&gt;#&lt;/a&gt; 概要&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;MVCC&lt;/code&gt; ，全称 &lt;code&gt;Multi-Version Concurrency Control&lt;/code&gt; ，即多版本并发控制。在发生读写冲突时，能做到不加锁，非阻塞并发读&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;MVCC&lt;/code&gt; ，全称 &lt;code&gt;Multi-Version Concurrency Control&lt;/code&gt; ，即多版本并发控制。在发生读写冲突时，能做到不加锁，非阻塞并发读，简单来说就是为了解决 &lt;code&gt;读写冲突&lt;/code&gt; ，提高数据库并发性能&lt;/p&gt;
 &lt;h2 id=&#34;当前读-快照读&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#当前读-快照读&#34;&gt;#&lt;/a&gt; 当前读、快照读&lt;/h2&gt;
 &lt;p&gt;在学习 MVCC 多版本并发控制之前，需要了解一下，什么是 MySQL InnoDB 下的 &lt;code&gt;当前读&lt;/code&gt; 和 &lt;code&gt;快照读&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;当前读&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#当前读&#34;&gt;#&lt;/a&gt; 当前读&lt;/h3&gt;
@@ -26,6 +26,23 @@
 &lt;ul&gt;
 &lt;li&gt;普通的 &lt;code&gt;select&lt;/code&gt;  操作就是快照读，不加锁的非阻塞读。快照读的前提是隔离级别不是串行级别，串行级别下的快照读会退化成当前读；之所以出现快照读的情况，是基于提高并发性能的考虑，&lt;ins class=&#34;dot&#34;&gt;快照读的实现是基于多版本并发控制&lt;/ins&gt;，即 MVCC, 可以认为 MVCC 是行锁的一个变种，但它在很多情况下，避免了加锁操作，降低了开销；既然是基于多版本，即快照读可能读到的并不一定是数据的最新版本，而有可能是之前的历史版本&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;mvcc实现原理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mvcc实现原理&#34;&gt;#&lt;/a&gt; MVCC 实现原理&lt;/h2&gt;
+&lt;p&gt;通过 &lt;code&gt;3个隐式字段&lt;/code&gt; ， &lt;code&gt;undo日志&lt;/code&gt;  ， &lt;code&gt;Read View&lt;/code&gt;  来实现的&lt;/p&gt;
+&lt;h3 id=&#34;隐式字段&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#隐式字段&#34;&gt;#&lt;/a&gt; 隐式字段&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;DB_TRX_ID：最近修改 ( &lt;code&gt;修改/插入&lt;/code&gt; ) 事务 ID：记录创建这条记录 / 最后一次修改该记录的事务 ID&lt;/li&gt;
+&lt;li&gt;DB_ROLL_PTR：回滚指针，指向这条记录的上一个版本&lt;/li&gt;
+&lt;li&gt;DB_ROW_ID：自增 ID（隐藏主键），如果数据表没有主键，InnoDB 会自动以 &lt;code&gt;DB_ROW_ID&lt;/code&gt;  产生一个聚簇索引&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;undo-log&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#undo-log&#34;&gt;#&lt;/a&gt; undo log&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;当一个数据被修改时，会对数据添加 &lt;code&gt;排他锁&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;然后把该行数据拷贝到 &lt;code&gt;undo log&lt;/code&gt;  中，作为旧记录，既在 &lt;code&gt;undo log&lt;/code&gt;  中有当前行的拷贝副本&lt;/li&gt;
+&lt;li&gt;然后修改当前当前数据，并且将当前数据的隐式字段事务 ID 修改为当前事务的 ID，然后将回滚指针指向 &lt;code&gt;undo log&lt;/code&gt;  的副本记录，表示当前记录的上一个版本&lt;/li&gt;
+&lt;li&gt;当数据再次被修改时，会将最新的旧数据插入到链表的头部&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;read-view-读视图&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#read-view-读视图&#34;&gt;#&lt;/a&gt; Read View 读视图&lt;/h3&gt;
+&lt;p&gt;Read View 就是事务进行 &lt;code&gt;快照读&lt;/code&gt; 操作的时候生产的 &lt;code&gt;读视图&lt;/code&gt; ，记录并维护系统当前活跃事务的 ID，通过 &lt;code&gt;读视图&lt;/code&gt; 来判断当前事务能够读取到哪个版本的数据，可能是最新的数据，也有可能是 &lt;code&gt;undo log&lt;/code&gt;  中的历史版本&lt;/p&gt;
 </content>
         <category term="mysql" scheme="https://www.zkheo.top/categories/mysql/" />
         <category term="mysql" scheme="https://www.zkheo.top/tags/mysql/" />
