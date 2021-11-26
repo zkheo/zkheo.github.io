@@ -7,6 +7,18 @@
     "home_page_url": "https://www.zkheo.top",
     "items": [
         {
+            "id": "https://www.zkheo.top/2021/11/26/mysqlLog/",
+            "url": "https://www.zkheo.top/2021/11/26/mysqlLog/",
+            "title": "Mysql Log",
+            "date_published": "2021-11-26T11:41:41.000Z",
+            "content_html": "<h1 id=\"mysql-log\"><a class=\"anchor\" href=\"#mysql-log\">#</a> Mysql Log</h1>\n<h2 id=\"binlog\"><a class=\"anchor\" href=\"#binlog\">#</a> Binlog</h2>\n<ul>\n<li>Binlog mysql server 层的日志，称为归档日志</li>\n<li>记录数据库操作日志，包括 <code>DML</code> 、 <code>DDL</code>  操作，以二进制方式记录到日志文档</li>\n<li>Binlog 有三种模式：\n<ul>\n<li>STATMENT：\n<ul>\n<li>基于 SQL 语句的复制，每一条会修改数据的 sql 语句会记录到 binlog 中。</li>\n<li>优点：不需要记录每一条 SQL 语句与每行的数据变化，这样子 binlog 的日志也会比较少，减少了磁盘 IO，提高性能。</li>\n<li>缺点：在 Binglog 重放时，SQL 中使用了一些函数时，可能造成数据不一致的情况，比如 now ()</li>\n</ul>\n</li>\n<li>ROW：基于行的复制，记录数据修改前后的数据行信息\n<ul>\n<li>优点：不会出现数据不一致的情况</li>\n<li>缺点：产生的日志量较大，在使用 alter table 的时候会让日志暴涨</li>\n</ul>\n</li>\n<li>MIXED：混合模式\n<ul>\n<li>以上两种模式的混合使用，一般的复制使用 STATEMENT 模式保存 binlog，对于 STATEMENT 模式无法复制的操作使用 ROW 模式保存 binlog，MySQL 会根据执行的 SQL 语句选择日志保存方式。</li>\n</ul>\n</li>\n<li>Binlog 写入过程\n<ul>\n<li>在事务执行过程中，会先将日志写入到 binlog cache，事务提交的时候，再把 binlog cache 写到 binlog 文件</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
+            "tags": [
+                "mysql",
+                "mysql",
+                "面试"
+            ]
+        },
+        {
             "id": "https://www.zkheo.top/2021/11/26/mysqlMvcc/",
             "url": "https://www.zkheo.top/2021/11/26/mysqlMvcc/",
             "title": "Mysql Mvcc",

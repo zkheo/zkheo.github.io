@@ -1,3 +1,4 @@
+https://www.zkheo.top/2021/11/26/mysqlLog/
 https://www.zkheo.top/2021/11/26/mysqlMvcc/
 https://www.zkheo.top/2021/11/26/hexoCommands/
 https://www.zkheo.top/2021/11/26/mysqlLock/
