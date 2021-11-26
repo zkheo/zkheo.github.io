@@ -7,6 +7,18 @@
     "home_page_url": "http://zkheo.top",
     "items": [
         {
+            "id": "http://zkheo.top/2021/11/26/mysqlLock/",
+            "url": "http://zkheo.top/2021/11/26/mysqlLock/",
+            "title": "Mysql 锁",
+            "date_published": "2021-11-26T02:54:52.000Z",
+            "content_html": "<h1 id=\"mysql-锁\"><a class=\"anchor\" href=\"#mysql-锁\">#</a> Mysql 锁</h1>\n",
+            "tags": [
+                "mysql",
+                "mysql",
+                "面试"
+            ]
+        },
+        {
             "id": "http://zkheo.top/2021/11/15/tunnel/",
             "url": "http://zkheo.top/2021/11/15/tunnel/",
             "title": "内网穿透",

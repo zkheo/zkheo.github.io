@@ -10,8 +10,19 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Mon, 15 Nov 2021 15:28:07 +0800</pubDate>
-        <lastBuildDate>Mon, 15 Nov 2021 15:28:07 +0800</lastBuildDate>
+        <pubDate>Fri, 26 Nov 2021 10:54:52 +0800</pubDate>
+        <lastBuildDate>Fri, 26 Nov 2021 10:54:52 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://zkheo.top/2021/11/26/mysqlLock/</guid>
+            <title>Mysql 锁</title>
+            <link>http://zkheo.top/2021/11/26/mysqlLock/</link>
+            <category term="mysql" scheme="http://zkheo.top/categories/mysql/" />
+            <category term="mysql" scheme="http://zkheo.top/tags/mysql/" />
+            <category term="面试" scheme="http://zkheo.top/tags/%E9%9D%A2%E8%AF%95/" />
+            <pubDate>Fri, 26 Nov 2021 10:54:52 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mysql-锁&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mysql-锁&#34;&gt;#&lt;/a&gt; Mysql 锁&lt;/h1&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">http://zkheo.top/2021/11/15/tunnel/</guid>
             <title>内网穿透</title>
