@@ -10,8 +10,29 @@
         </author>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Fri, 26 Nov 2021 10:54:52 +0800</pubDate>
-        <lastBuildDate>Fri, 26 Nov 2021 10:54:52 +0800</lastBuildDate>
+        <pubDate>Fri, 26 Nov 2021 12:51:52 +0800</pubDate>
+        <lastBuildDate>Fri, 26 Nov 2021 12:51:52 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">https://www.zkheo.top/2021/11/26/hexoCommands/</guid>
+            <title>Blog 常用命令备注</title>
+            <link>https://www.zkheo.top/2021/11/26/hexoCommands/</link>
+            <category term="hexo" scheme="https://www.zkheo.top/categories/hexo/" />
+            <category term="hexo" scheme="https://www.zkheo.top/tags/hexo/" />
+            <pubDate>Fri, 26 Nov 2021 12:51:52 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;清理&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#清理&#34;&gt;#&lt;/a&gt; 清理&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;清理生成的文件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;部署发布&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#部署发布&#34;&gt;#&lt;/a&gt; 部署发布&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生成文件，发布到 git 自动部署&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo g -d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;发布搜索数据&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#发布搜索数据&#34;&gt;#&lt;/a&gt; 发布搜索数据&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将生成的文件数据发布到搜索中间件 algolia&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hexo algolia&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://www.zkheo.top/2021/11/26/mysqlLock/</guid>
             <title>Mysql 锁</title>

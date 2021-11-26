@@ -7,6 +7,17 @@
     "home_page_url": "https://www.zkheo.top",
     "items": [
         {
+            "id": "https://www.zkheo.top/2021/11/26/hexoCommands/",
+            "url": "https://www.zkheo.top/2021/11/26/hexoCommands/",
+            "title": "Blog 常用命令备注",
+            "date_published": "2021-11-26T04:51:52.000Z",
+            "content_html": "<h1 id=\"清理\"><a class=\"anchor\" href=\"#清理\">#</a> 清理</h1>\n<blockquote>\n<p>清理生成的文件</p>\n</blockquote>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>hexo clean</pre></td></tr></table></figure><h1 id=\"部署发布\"><a class=\"anchor\" href=\"#部署发布\">#</a> 部署发布</h1>\n<blockquote>\n<p>生成文件，发布到 git 自动部署</p>\n</blockquote>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>hexo g -d</pre></td></tr></table></figure><h1 id=\"发布搜索数据\"><a class=\"anchor\" href=\"#发布搜索数据\">#</a> 发布搜索数据</h1>\n<blockquote>\n<p>将生成的文件数据发布到搜索中间件 algolia</p>\n</blockquote>\n<figure class=\"highlight bash\"><figcaption data-lang=\"bash\"></figcaption><table><tr><td data-num=\"1\"></td><td><pre>hexo algolia</pre></td></tr></table></figure>",
+            "tags": [
+                "hexo",
+                "hexo"
+            ]
+        },
+        {
             "id": "https://www.zkheo.top/2021/11/26/mysqlLock/",
             "url": "https://www.zkheo.top/2021/11/26/mysqlLock/",
             "title": "Mysql 锁",
